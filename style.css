@@ -1,0 +1,633 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.first{
+    position: relative;
+}
+
+.parallax-section {
+    position: relative;    
+    overflow: hidden;
+    height: 1080px; 
+    
+    z-index: 4;
+}
+
+.parallax-section img { 
+    position: absolute;
+    object-fit: cover; 
+    transform: translate(-50%, -50%);
+}
+
+.mid-img {
+    height: 100%;
+    width: 100%;
+    top: 55%;  
+    left: 50%; 
+    z-index: 2;
+}
+
+.back-img{
+    height: 102%;
+    width: 102%;
+    top: 50%;  
+    left: 50%; 
+    z-index: 1;
+    
+}
+
+.front-img{
+    z-index: 4;
+    top: 54%;  
+    left: 50%; 
+    
+}
+
+.title-img{
+    width: 50vh;
+    top: 50%;  
+    left: 50%; 
+    position: absolute;
+    z-index: 4;
+    margin: auto;
+}
+
+.parallax-cover{
+    z-index: 5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgb(0, 0, 0) 0px -20px 20px 20px inset;
+}
+
+.second{
+    padding: 1% 0;
+    background: url(./assets/web/background/color.png);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.trailerSection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailerSection h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 2px solid #f803cb;
+    padding-bottom: 1px;
+}
+
+.trailerSection iframe{
+    z-index: 4;
+}
+
+.trailerHeader{
+    color: white;
+}
+
+.news-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.news-card{
+    width: 25%;
+    height: 50%;
+    background-color: white;
+    z-index: 4;
+    transition: all 0.4s ease-in-out;
+    border: 0.5vh solid #000000;
+    user-select: none;
+    cursor: default;
+}
+
+.news-card:hover{
+    border: 0.5vh solid #f803cb;
+    transform: translateY(-3vh);
+}
+
+.news-detail{
+    padding: 3% 3%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.news-card img{
+    width: 100%;
+}
+
+.detail-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.news-type{
+    color: #f803cb;
+}
+
+.news-title{
+    font-weight: 700;
+    font-size: 2vh;
+}
+
+.news-description{
+    font-size: 1.75vh;
+}
+
+.news-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.review-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10vh;
+}
+
+.review-card{
+    height: 10%;
+    width: 55%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 5vh;
+    border: 3px solid white;
+    font-family: "Kanit", sans-serif;
+    color: white;
+    z-index: 4;
+    cursor: default;
+    user-select: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.review-score{
+    font-size: 5vh;
+    font-weight: 900;
+}
+
+.reviewer{
+    font-size: 2vh;
+}
+
+.fill-card{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -2;
+    background-color: #ffffff;
+    transition: width 0.5s ease-in-out;
+}
+
+.review-card:hover .fill-card{
+    width: 100%;
+}
+
+.review-card:hover{
+    color: black;
+}
+
+.col-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    z-index: 4;
+    
+}
+
+.col-mid img{
+    width: 85%;
+    transition: all 0.4s ease-in-out;
+}
+
+.col-mid:hover img{
+    width: 90%;
+}
+
+.about{
+    display: flex;
+    padding: 20vh 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+}
+
+.about-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 4em;
+}
+
+.about-img{
+    height: 22vh;
+}
+
+.about-desc{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 3em;
+    font-family: "Kanit", sans-serif;
+    color: white;
+}
+
+.about-header{
+    font-size: 5vh;
+    font-weight: 600;
+    border-bottom: 2px #f803cb solid;
+}
+
+.about-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 2vh;
+
+}
+
+.paragraph{
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.feat-img{
+    height: max-content;
+    object-fit: contain;
+}
+
+.over-img{
+    height: 25vh;
+}
+
+.third{
+    background: url(./assets/web/parallax/campfire.png), rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 20px 20px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.carousel{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    padding: 5% 0;
+    user-select: none;
+}
+
+.title-carousel{
+    font-family: "Kanit", sans-serif;
+    font-size: 5vh;
+    font-weight: 700;
+    color: white;
+    border-bottom: 4px #f803cb solid;
+    display: flex;
+    justify-content: center;
+}
+
+.bot-carousel{
+    height: 75%;
+    
+}
+
+.carousel-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.carousel-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    gap: 2%;
+}
+
+.carousel-inner{
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-inner img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-item{
+    display: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.carousel-item:hover{
+    transform: scale(1.3);
+}
+
+.active{
+    display: flex;
+    transition: all 0.4s ease-in-out;
+}
+
+.carousel-display{
+    position: relative;
+}
+
+.left-btn{
+    position: absolute;
+    color: white;
+    font-size: 5vh;
+    left: 0%;
+    top: 40%;
+    width: 4%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.719);
+    user-select: none;
+    cursor: pointer;
+}
+
+.right-btn{
+    position: absolute;
+    color: white;
+    font-size: 5vh;
+    right: 0%;
+    top: 40%;
+    width: 4%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.719);
+    user-select: none;
+    cursor: pointer;
+}
+
+.image-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.image-list img{
+    width: 15%;
+    height: auto;
+    cursor: pointer;
+}
+
+.list-img{
+    border: 5px #000000 solid;
+}
+
+.selected{
+    border: 5px #f803cb solid;
+}
+
+.dot {
+    height: 3vh;
+    width: 3vh;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle{
+    height: 3vh;
+    width: 3vh;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.rating-section{
+    display: flex;
+    font-size: 3vh;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    gap: 3%;
+    width: 80%;
+}
+
+.carousel-col-right{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 60%;
+    height: 60vh;
+    gap: 2%;
+}
+
+.image-title{
+    font-size: 4vh;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    border-bottom: 4px solid #f803cb;
+    padding: 1%;
+    margin-bottom: 2vh;
+}
+
+.carousel-desc{
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-size: 2vh;
+}
+
+.world-map{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.map-container {
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-map, .bot-map {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-range{
+    position: absolute;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    z-index: 0;
+    text-decoration: none;
+    appearance: none;
+    cursor: ew-resize;
+    z-index: 2;
+}
+
+.view-map{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+    left: 0;
+    object-fit: cover;
+}
+
+
+.top-map{
+    object-fit: cover;
+    width: 100%;
+}
+
+.image-range::-webkit-slider-thumb{
+    color: transparent;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+.location{
+    position: absolute;
+    display: flex;
+    width: 25%
+    
+}
+
+.skull{
+    width: 10%;
+    z-index: 3;
+}
+
+.skull img{
+    width: 100%;
+}
+
+.center{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 37%;
+}
+
+.west{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 9%;
+    top: 56%;
+}
+
+.east{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 2%;
+    top: 50%;
+}
+
+.north{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 13%;
+    left: 37%;
+}
+
+.location.north .display-bos{
+    flex-direction: column-reverse;
+}
+
+.south{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+    left: 35%;
+}
+
+.location.south .display-bos{
+    padding-bottom: 2vh;
+}
+
+.display-bos{
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    font-size: 2vh;
+    font-weight: 700;
+    color: white;
+    transition: all 0.25s ease-in-out;
+}
+
+.display-bos img{
+    width: 65%;
+    border: 0.3vh solid #f803cb;
+}
+
+
+.skull:hover ~.display-bos, .display-bos:hover{
+    z-index: 4;
+    opacity: 1 !important;
+}
+
+.audioArea{
+    height: 100vh;
+}
