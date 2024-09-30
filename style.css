@@ -72,11 +72,17 @@ body{
 }
 
 .trailerSection{
-    height: 100vh;
+    /* height: 100vh; */
+    margin: 10vh 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+iframe{
+    width: 70%;
+    height: 75vh;
 }
 
 .trailerSection h1{
@@ -94,16 +100,17 @@ body{
 }
 
 .news-section{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 25vh 0;
     gap: 2em;
 }
 
 .news-card{
     width: 25%;
-    height: 50%;
+    height: 450px;
     background-color: white;
     z-index: 4;
     transition: all 0.4s ease-in-out;
@@ -155,9 +162,11 @@ body{
 }
 
 .review-section{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: 25vh 0;
     gap: 2em;
 }
 
@@ -299,10 +308,11 @@ body{
     display: flex;
     align-items: center;
     height: 80vh;
+    margin: 10vh 0;
 }
 
 .carousel{
-    height: 100vh;
+    /* height: 100vh; */
     width: 90%;
     margin: auto;
     z-index: 3;
@@ -334,6 +344,7 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
+    padding: 20px;
     gap: 3vw;
 }
 
@@ -461,7 +472,7 @@ body{
     align-items: start;
     flex-direction: column;
     width: 60%;
-    height: 60vh;
+    /* height: 60vh; */
     gap: 2%;
 }
 
@@ -482,9 +493,10 @@ body{
 }
 
 .world-map{
-    height: 100vh;
+    /* height: 100vh; */
     width: 90%;
     margin: auto;
+    padding: 10vh 0;
 }
 
 .map-container {
@@ -628,6 +640,87 @@ body{
     opacity: 1 !important;
 }
 
-.audioArea{
+/* .audioArea{
     height: 100vh;
+} */
+
+@media screen and (max-width:1150px) {
+
+    .news-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .news-card{
+        width: 90%;
+        height: 100%;
+    }
+
+    .col-mid{
+        display: none;
+    }
+
+    .about-tab{
+        flex-wrap: wrap;
+    }
+
+    .detail-header{
+        flex-wrap: wrap;
+    }
+
+    .carousel-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .rating-section{
+        flex-wrap: wrap;
+    }
+
+    .dot{
+        width: 1vh;
+        height: 1vh;;
+    }
+
+    .circle{
+        width: 1vh;
+        height: 1vh;;
+    }
+
+    .third{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 95%;
+        height: 90%;
+        gap: 2%;
+    }
+
+    .carousel-col-right{
+        width: 90%;
+    }
+
+    .about-header{
+        font-size: 30px;
+    }
+
+    .about-img{
+        height: 70%;
+    }
+
+    .about-desc{
+        width: 95%;
+    }
+
+    .feat-img{
+        width: 90%;
+    }
 }
